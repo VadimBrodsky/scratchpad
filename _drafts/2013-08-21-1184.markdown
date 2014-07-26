@@ -1,0 +1,44 @@
+---
+layout: post
+title: getting-good-php php basics php
+categories: []
+tags:
+- basics
+- php
+status: publish
+type: post
+published: true
+meta:
+  _pingme: '1'
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>#php #basics @getting-good-php</p>
+<p># PHP Scope<br />
+- Variable have local scope by default.<br />
+- To expand the scope use the `global` keyword.<br />
+- Variables that are imported from required file act as local to the file.</p>
+<p>```php<br />
+$friend = "Ghost";<br />
+function greet() {<br />
+    global $friend;<br />
+    echo "Hello $friend";<br />
+}<br />
+greet();<br />
+```</p>
+<p>## Superglobals<br />
+- Group of variables that are avaliable in all scopes.<br />
+- They are all associative arrays, offer special information.<br />
+    - `$GLOBALS` - all global variables in the script.<br />
+    - `$_SERVER` - information about the server that is running the PHP.<br />
+    - `$_GET` - any HTTP GET request variables.<br />
+    - `$_POST` - any HTTP POST request variables.<br />
+    - `$_REQUEST` - info about the HTTP request.<br />
+    - `$_SESSION` - array to store variables that are needed across pages.<br />
+    - `$_ENV` - info about the environment.<br />
+    - `$_COOKIE` - HTTP cookie informaiton.</p>

@@ -1,0 +1,110 @@
+---
+layout: post
+title: sass gird scss
+categories: []
+tags:
+- gird
+- sass
+status: publish
+type: post
+published: true
+meta:
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>#sass #gird</p>
+<p># Sussy Grid</p>
+<p>```scss<br />
+// require "susy"; // config.rb</p>
+<p>@import "susy";</p>
+<p>$total-columns: 12;<br />
+$column-width: 60px; // rem em %<br />
+$gutter-width: 20px; // rem em %<br />
+$grid-padding: $gutter-width;</p>
+<p>#page {<br />
+    @include container;<br />
+}</p>
+<p>#main {<br />
+	@include span-columns(8);</p>
+<p>	header {<br />
+		@include span-colum(8, 8);<br />
+	}</p>
+<p>	section {<br />
+		@include span-columns(6, 8);<br />
+	}</p>
+<p>	aside {<br />
+		@include span-columns(2 omega, 8);<br />
+	}<br />
+}</p>
+<p>#sidebar {<br />
+	@include span-columns(4 omega); // omega - makes items float: right; for last item in a row.<br />
+}</p>
+<p>@include at-breakpoint (780px 12 920px) {<br />
+	#page {<br />
+		#main {<br />
+			@include span-columns(8,12);<br />
+		}<br />
+	}<br />
+}</p>
+<p>@include at-breakpoint (780px 12 920px) {<br />
+	@include layout(6) {<br />
+		#page {<br />
+			//some stuff<br />
+		}<br />
+	}</p>
+<p>	// with-grid-settings(columns, column width, gutter, padding)<br />
+	@include with-grid-settings(12, 35px, 15px, 15px) {<br />
+		#page {<br />
+			@include container;<br />
+		}<br />
+	}<br />
+}</p>
+<p>.element {<br />
+	@include prefix(2); // padding<br />
+	suffix<br />
+	pad<br />
+	bleed</p>
+<p>	@include pre(2); // margin<br />
+	post<br />
+	squish<br />
+	push<br />
+	pull<br />
+}<br />
+```</p>
+<p># Organizing SCSS</p>
+<p>```<br />
+screen.scss + @import compass<br />
+|<br />
+|-base<br />
+|---layout<br />
+|---global<br />
+|---reset<br />
+|---fonts<br />
+|---tabs<br />
+|<br />
+|-mixins-vars<br />
+|---variables<br />
+|---mixins<br />
+|-outer-modules<br />
+|---module<br />
+|--etc.<br />
+|<br />
+|-pages<br />
+|---front<br />
+|---selection<br />
+|---article<br />
+|--etc.<br />
+|<br />
+|-partials<br />
+|---header<br />
+|---footer<br />
+|---blocks<br />
+|---etc.</p>
+<p>ie.scss</p>
+<p>maintenance.scss<br />
+```</p>

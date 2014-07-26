@@ -1,0 +1,26 @@
+---
+layout: post
+title: ''
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p># Resposive Navigation Design Patterns</p>
+<p>- http://zurb.com/playground/off-canvas-layouts<br />
+- http://zurb.com/playground/projects/off-canvas/offcanvas-4.html<br />
+- http://jasonweaver.name/lab/offcanvas/<br />
+- http://www.lukew.com/ff/entry.asp?1569<br />
+- http://www.lukew.com/ff/entry.asp?1517<br />
+- http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/<br />
+- http://bradfrostweb.com/blog/web/responsive-nav-patterns/<br />
+- http://responsivenavigation.net/</p>

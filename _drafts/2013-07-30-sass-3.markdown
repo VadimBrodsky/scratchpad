@@ -1,0 +1,46 @@
+---
+layout: post
+title: return sass sass sass sass
+categories: []
+tags:
+- sass
+status: publish
+type: post
+published: true
+meta:
+  _pingme: '1'
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>#sass</p>
+<p># Functions in Sass</p>
+<p>Function example:<br />
+```sass<br />
+@function bb-opos( $bb-flow ) {<br />
+    @if $bb-flow == right {<br />
+        @return left;<br />
+    }<br />
+    @else {<br />
+        @return right;<br />
+    }<br />
+}<br />
+```</p>
+<p>## The return directive</p>
+<p>- `@return`<br />
+- The result or the answer of a function<br />
+- There can be only one return</p>
+<p>## Using the result of a funciton</p>
+<p>With a variable:</p>
+<p>```sass<br />
+$bb-flow: left !default;<br />
+$bb-opos: bb-opos($bb-flow);<br />
+```</p>
+<p>With a property:</p>
+<p>```sass<br />
+float: #($bb-opos);<br />
+```</p>

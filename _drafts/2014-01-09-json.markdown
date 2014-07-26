@@ -1,0 +1,49 @@
+---
+layout: post
+title: json
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>JSON Format</p>
+<p>## Example<br />
+```json<br />
+{<br />
+    "paintings" : {<br />
+        "painting" : [<br />
+                {<br />
+                    "title" : "Boardwalk 5",<br />
+                    "artist" : "Arnie Palmer",<br />
+                    "image" : "ap1.jpg",<br />
+                    "price" : 850<br />
+                },<br />
+                {<br />
+                    "title" : "A Lasting Piece",<br />
+                    "artist" : "Arnie Palmer",<br />
+                    "image" : "ap2.jpg",<br />
+                    "price" : 450<br />
+                },<br />
+                {<br />
+                    "title" : "Surf at High Tide",<br />
+                    "artist" : "Arnie Palmer",<br />
+                    "image" : "ap3.jpg",<br />
+                    "price" : 950<br />
+                }<br />
+            ]<br />
+    }<br />
+}<br />
+```</p>
+<p>## Tools<br />
+- [JSON Lint](http://jsonlint.com/)<br />
+- [JSON Editor Online](http://www.jsoneditoronline.org/)<br />
+- [XML to JSON](http://www.utilities-online.info/xmltojson/#.Us7RMGRDvw8)</p>

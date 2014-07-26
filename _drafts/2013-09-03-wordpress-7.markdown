@@ -1,0 +1,28 @@
+---
+layout: post
+title: wordpress php
+categories: []
+tags:
+- wordpress
+status: publish
+type: post
+published: true
+meta:
+  _pingme: '1'
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>#wordpress</p>
+<p># Wordpress Action Hooks<br />
+- Let's developers to do something when it is triggered.<br />
+- The most common use of this is to give plugins the ability to output their own links to stylesheets or JavaScript files.</p>
+<p>```php</p>
+<p>```</p>
+<p>## Examples of Action Hooks<br />
+- [wp_title](http://neruda.nfshost.com/capsule/2013/08/31/wordpress-wp_function-3/)<br />
+- [wp_head](http://neruda.nfshost.com/capsule/2013/09/03/wordpress-wp_function-5/)</p>

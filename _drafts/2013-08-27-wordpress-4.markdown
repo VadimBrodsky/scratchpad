@@ -1,0 +1,28 @@
+---
+layout: post
+title: wordpress php
+categories: []
+tags:
+- wordpress
+status: publish
+type: post
+published: true
+meta:
+  _pingme: '1'
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>#wordpress</p>
+<p># The WordPress Loop<br />
+- Codex reference -- http://codex.wordpress.org/The_Loop_in_Action<br />
+- When the structure of the content repeats, but only the content changes.<br />
+- The engine behind WordPress blogs.<br />
+- Most of the time the loop will only lists 10 posts, as set in the Reading Settings of WordPress.</p>
+<p>```php</p>
+<p>    <!-- content here --></p>
+<p>```</p>

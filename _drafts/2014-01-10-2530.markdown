@@ -1,0 +1,22 @@
+---
+layout: post
+title: ''
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>Secret</p>
+<p>## Sync - Work Mac</p>
+<p>```<br />
+APJBDWOVZ2HMH3A657D6GZGGHL4ZZVWLO<br />
+```</p>

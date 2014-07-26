@@ -1,0 +1,28 @@
+---
+layout: post
+title: sass
+categories: []
+tags:
+- sass
+status: publish
+type: post
+published: true
+meta:
+  _pingme: '1'
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>#sass</p>
+<p># Operators in Sass</p>
+<p>## Equality</p>
+<p>Can be used with strings or numbers:</p>
+<p>- ``==`` means equals<br />
+- ``!=`` means not</p>
+<p>## Relational</p>
+<p>- ```` means greater than<br />
+- ``=`` means more than or equal to</p>

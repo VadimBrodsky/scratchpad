@@ -1,0 +1,22 @@
+---
+layout: post
+title: ''
+categories: []
+tags: []
+status: trash
+type: post
+published: false
+meta:
+  _encloseme: '1'
+  _wp_trash_meta_status: publish
+  _wp_trash_meta_time: '1392494029'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>- valentines dat 50<br />
+- february 2 posters 70<br />
+- cowboy party 50</p>

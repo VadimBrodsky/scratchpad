@@ -1,0 +1,27 @@
+---
+layout: post
+title: sass sass
+categories: []
+tags:
+- sass
+status: publish
+type: post
+published: true
+meta:
+  _pingme: '1'
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>#sass</p>
+<p># Stripping the Unit from a Value</p>
+<p>```sass<br />
+// A variable with a unit<br />
+$variable-with-unit: 0%;</p>
+<p>// Strip the unit from the variable<br />
+$variable-without-unit: ($variable-with-unit * 1 + 0);<br />
+```</p>

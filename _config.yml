@@ -1,0 +1,13 @@
+# Site settings
+title: scratchpad
+email: 
+description: "Notes, examples, tests etc."
+baseurl: "/scratchpad"
+# baseurl: ""
+url: "http://yourdomain.com"
+twitter_username: vadimbrodsky
+github_username:  vadimbrodsky
+
+# Build settings
+markdown: redcarpet
+permalink: pretty

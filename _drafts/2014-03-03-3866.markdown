@@ -1,0 +1,21 @@
+---
+layout: post
+title: ''
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>lt`</p>
+<p>```<br />
+cudaminer.exe -o stratum+tcp://primary.coinhuntr.com:3333 -O diq9000.lt1:1964<br />
+```</p>

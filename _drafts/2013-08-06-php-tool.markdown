@@ -1,0 +1,26 @@
+---
+layout: post
+title: php tool
+categories: []
+tags:
+- php
+- tool
+status: publish
+type: post
+published: true
+meta:
+  _pingme: '1'
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>#php #tool</p>
+<p># PHP Online Console</p>
+<p>- http://phpjs.hertzen.com/console.html<br />
+- http://phpcodepad.com/<br />
+- http://coderun.com/ide/<br />
+- http://hakre.wordpress.com/2011/10/05/list-of-online-php-codepads/</p>

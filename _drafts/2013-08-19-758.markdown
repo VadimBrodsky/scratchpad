@@ -1,0 +1,46 @@
+---
+layout: post
+title: getting-good-php php basics php php
+categories: []
+tags:
+- basics
+- php
+status: publish
+type: post
+published: true
+meta:
+  _pingme: '1'
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>#php #basics @getting-good-php</p>
+<p># PHP Print Functions / Constructs</p>
+<p>## Echo<br />
+- `echo` is not a function but a language construct.<br />
+- Multiple strings can be concatinated as they are outputted.</p>
+<p>## Print<br />
+- `print` is also a language construct, like `echo` but takes a single string.</p>
+<p>## Print_r<br />
+- Print readable, useful for outputting things like arrays and objects.<br />
+- To keep the whitespace, use in conjunciton with `
+<pre>`.
+- Cannot output booleans.
+
+```php
+$person = array("name" =&gt; "Sherlock Holmes", "job" =&gt; "detective");
+echo "<pre>";
+print_r($person);
+echo "</pre>
+<p>";<br />
+```</p>
+<p>## Var_dump<br />
+Outputs the contents of variables, similar to `print_r` but it can output Booleans.</p>
+<p>```php<br />
+$a = true;<br />
+var_dump($a);   // bool(true)<br />
+```</p>

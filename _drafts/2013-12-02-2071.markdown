@@ -1,0 +1,20 @@
+---
+layout: post
+title: ''
+categories: []
+tags: []
+status: trash
+type: post
+published: false
+meta:
+  _encloseme: '1'
+  _wp_trash_meta_status: publish
+  _wp_trash_meta_time: '1386002875'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+

@@ -1,0 +1,24 @@
+---
+layout: post
+title: ''
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>KVE Cross Reff App</p>
+<p>- http://www.lynda.com/jQuery-tutorials/Creating-jQuery-Mobile-page-dynamically/104967/109430-4.html<br />
+- https://github.com/kemcho/jQuery-Mobile-School/blob/master/4-Dynamic-Page.html<br />
+- http://www.moretechtips.net/2012/07/dynamic-page-generation-in-jquery.html<br />
+- http://demos.jquerymobile.com/1.1.1/docs/pages/page-dynamic.html<br />
+- http://www.youtube.com/watch?v=gFGKbk8BRVY&amp;codekitCB=410979551.121355<br />
+- http://baxterlearning.kveincdev.com/bref-test/</p>

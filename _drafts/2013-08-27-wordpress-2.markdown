@@ -1,0 +1,27 @@
+---
+layout: post
+title: WordPress php
+categories: []
+tags:
+- wordpress
+status: publish
+type: post
+published: true
+meta:
+  _pingme: '1'
+  _encloseme: '1'
+author:
+  login: vadimbrodsky
+  email: vadim@vadimbrodsky.com
+  display_name: Vadim
+  first_name: Vadim
+  last_name: Brodsky
+---
+<p>#WordPress</p>
+<p># WordPress Functions.php<br />
+- Must reside in the same directory as the `index.php` and `style.css`<br />
+- Turns on and off certain WordPress functionality for the theme.<br />
+- First line is always `&lt;?php` but no need in closing it at the end.</p>
+<p>## Add Menus<br />
+```php</p>
+<p>```</p>
