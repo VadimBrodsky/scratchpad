@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Markdown Cheatsheet
+category: markdown
 ---
 
 ## Headers

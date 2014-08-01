@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Rename File Extension of All Files in a Folder
+category: snippet
+tags: bash
 ---
 
 ```bash

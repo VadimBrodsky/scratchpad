@@ -2,11 +2,15 @@
 title: scratchpad
 email: 
 description: "Notes, examples, tests etc."
-baseurl: "/scratchpad"
+baseurl: ""
 # baseurl: ""
 url: "http://yourdomain.com"
 twitter_username: vadimbrodsky
 github_username:  vadimbrodsky
+
+
+# Archive generator
+# https://github.com/shigeya/jekyll-category-archive-plugin
 
 # Build settings
 markdown: redcarpet
