@@ -1,9 +1,4 @@
----
-layout: post
-title: Rename File Extension of All Files in a Folder
-category: snippet
-tags: bash
----
+# Rename File Extension of All Files in a Folder
 
 ```bash
 for i in *.txt; do

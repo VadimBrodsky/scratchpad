@@ -1,8 +1,4 @@
----
-layout: post
-title: Markdown Cheatsheet
-category: markdown
----
+# Markdown Cheatsheet
 
 ## Headers
 

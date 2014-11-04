@@ -1,10 +1,4 @@
----
-layout: post
-title: Simple Regular Expression for HTML Tags
-category: snippet
-tags: [regex, bash]
-meta: test
----
+# Simple Regular Expression for HTML Tags
 
 ```
 <[^>]*>
