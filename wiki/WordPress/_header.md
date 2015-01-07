@@ -1,0 +1,1 @@
+tags: [[Wordpres|[/pages/wordpress/]]

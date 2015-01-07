@@ -1,0 +1,18 @@
+# DB Terms: Database
+
+
+- Set of tables - collection of database tables.
+- In Rails 1 database is usually 1 database.
+  - Example DB name: `simple_cms_development`
+- Access permissions are granted at the database level.
+- The application decides whether a user can access certain tables.
+
+## Databases Consist of:
+- [[DB Terms: Database]]
+- [[DB Terms: Column]]
+- [[DB Terms: Row]]
+- [[DB Terms: Field]]
+- [[DB Terms: Index]]
+- [[DB Terms: Foreign Key]]
+- [[DB Terms: Schema]]
+- [[DB Terms: CRUD]]

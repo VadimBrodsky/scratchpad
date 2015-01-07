@@ -1,0 +1,129 @@
+@import bower_components/susy/sass/susy
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic)
+@import url(http://fonts.googleapis.com/css?family=Fira+Mono:400,700)
+
+@import pygments-tomorrow-night
+
+$susy: ( columns: 12, gutter-position: inside, math: fluid, output: float)
+
+$black: #333
+$gray: #999
+$indigo: #008ED4
+$white: white
+
+$code-bg: #25292C
+$max-width: 1000px
+
+#wiki-wrapper
+    +container
+
+#head, #footer, #wiki-content
+    +span(12)
+
+
+.history
+    #head
+        .actions
+            li:first-child
+                +span(3 of 12)
+            li
+                +span(3 of 12)
+
+.page, .results
+    #head
+        .actions
+            li:first-child
+                +span(3 of 12)
+            li
+                +span(1 of 12)
+
+.edit
+    #head
+        .actions
+            li
+                +span(6 of 12)
+
+#search-query
+    +span(10)
+
+#search-submit
+    +span(2)
+
+#wiki-wrapper
+    width: auto
+    padding: 0
+    #head
+        margin: 0
+        h1
+            width: 100%
+            background-color: $black
+            color: $gray
+            display: block
+            text-align: center
+            font-size: 1.5rem
+            font-weight: 300
+            margin: 0 0 1rem 0
+            padding: 1rem 0
+            strong
+                color: $white
+                font-weight: 800
+        .actions
+            +span(12)
+            float: none
+            margin: 0 auto
+            .minibutton
+                margin: 0
+                text-transform: uppercase
+                a
+                    background: none
+                    background-color: #eee
+                    border: none
+                    text-shadow: initial
+                    border-radius: initial
+                    text-align: center
+                    &:hover
+                        color: $indigo
+            #searchbar
+                width: 100%
+    #footer
+        margin-bottom: 0
+
+#pages, #wiki-history
+    +span(12)
+
+#wiki-body
+    .markdown-body
+        +span(12)
+        font-family: 'Source Sans Pro', sans-serif
+        p, ul
+            +with-layout(12)
+                +span(6)
+            float: left
+            clear: left
+        li ul
+            +span(12)
+        li ul
+            float: none
+        h1, h2, h3, h4, h5, h6
+            +span(12)
+    .highlight 
+        +span(12)
+        float: right
+        clear: right
+        background: none
+    p + .highlight, ul + .highlight, .highlight + .highlight
+        +with-layout(12)
+            +span(6)
+    pre, code
+        border-radius: 0
+        border: 0
+        background-color: $code-bg
+        font-family: 'Fira Mono'
+        color: white
+
+
+#gollum-editor
+    margin: 10px auto
+    width: 90%
+    border-radius: initial
