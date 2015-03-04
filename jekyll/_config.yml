@@ -1,0 +1,34 @@
+# Site settings
+title: knowbase
+email: vadim.brodsky@gmail.com
+description: Collection of notes
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: vadimbrodsky
+github_username:  vadimbrodsky
+permalink: /:categories/:title/
+
+# Build settings
+markdown: kramdown
+
+
+collections:
+  notes:
+    output: true
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "notes" # a collection in your site, in plural form
+    values:
+      layout: "default"
+
+
