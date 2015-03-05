@@ -1,12 +1,16 @@
 # Site settings
 title: scratchpad
-email: vadim.brodsky@gmail.com
 description: Collection of notes
-baseurl: "" # the subpath of your site, e.g. /blog/
+timezone: America/Toronto
+
+baseurl: "/scratchpad" # the subpath of your site, e.g. /blog/
 url: "http://vadimbrodsky.github.io/scratchpad" # the base hostname & protocol for your site
+permalink: notes/:categories/:title/
+
+email: vadim.brodsky@gmail.com
 twitter_username: vadimbrodsky
 github_username:  vadimbrodsky
-permalink: notes/:categories/:title/
+
 
 # Build settings
 markdown: redcarpet
@@ -14,11 +18,13 @@ redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 
+# Collections
 collections:
   snippets:
     output: true
 
 
+# Frontmatter Defaults
 defaults:
   -
     scope:
@@ -34,8 +40,7 @@ defaults:
       layout: "default"
 
 
-
-
+# Rake tasks settings
 post:
   template: _post.txt
   extension: md
