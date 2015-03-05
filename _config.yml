@@ -3,7 +3,7 @@ title: scratchpad
 email: vadim.brodsky@gmail.com
 description: Collection of notes
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://vadimbrodsky.github.io/scratchpad" # the base hostname & protocol for your site
 twitter_username: vadimbrodsky
 github_username:  vadimbrodsky
 permalink: notes/:categories/:title/
