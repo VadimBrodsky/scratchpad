@@ -6,14 +6,16 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: vadimbrodsky
 github_username:  vadimbrodsky
-permalink: /:categories/:title/
+permalink: notes/:categories/:title/
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 
 collections:
-  notes:
+  snippets:
     output: true
 
 
@@ -32,3 +34,19 @@ defaults:
       layout: "default"
 
 
+
+
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+editor: subl
+git:
+  branch: master
+transfer:
+  command: rsync
+  settings: -av
+  source: _site/
+  destination: ~/Git/username.github.com/

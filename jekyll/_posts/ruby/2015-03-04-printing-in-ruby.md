@@ -1,5 +1,8 @@
 ---
-title: Printing in Ruby
+title: "Printing in Ruby" 
+layout: post
+category: ruby
+date: 2015-03-04 21:45:20
 ---
 
 - To print a string, the most commonly used Ruby function is `puts`.
