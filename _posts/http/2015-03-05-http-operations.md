@@ -1,0 +1,10 @@
+---
+title: "HTTP Operations" 
+layout: post
+category: rails
+date: 2015-03-05 22:14:21 
+---
+
+- `GET` is the most common HTTP operation, used for reading data on the web; it just means “get a page”,
+- `POST` is the next most common operation; it is the request sent by your browser when you submit a form. In Rails applications, `POST` requests are typically used for creating things.
+- `PATCH` and `DELETE`, are designed for updating and destroying things on the remote server. These requests are less common than `GET` and `POST` since browsers are incapable of sending them natively.
