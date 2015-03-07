@@ -1,5 +1,5 @@
 ---
-title: "Rails for Zombies" 
+title: "Rails for Zombies: Level 1" 
 layout: post
 category: rails
 date: 2015-03-06 21:25:49 
