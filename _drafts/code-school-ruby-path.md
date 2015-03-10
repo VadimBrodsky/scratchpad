@@ -5,6 +5,8 @@ category: ruby
 date: 2015-03-06 20:02:13 
 ---
 
+Everything in Ruby has a return value.
+
 
 # Array Methods: Max and Sort
 
