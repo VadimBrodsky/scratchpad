@@ -12,7 +12,7 @@ layout: default
     	{% if page.categories %}
 			
 				{% for cat in page.categories %}
-					 • <a href="{{ site.baseurl }}/notes/{{ cat }}">{{ cat }}</a>
+					 • {% categorylink cat %} {{ cat }} {% endcategorylink %}</a>
 				{% endfor %}
 
     	{% endif %}

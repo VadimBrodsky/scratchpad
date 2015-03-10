@@ -24,20 +24,9 @@ collections:
     output: true
 
 
-# Frontmatter Defaults
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "notes" # a collection in your site, in plural form
-    values:
-      layout: "default"
+# Category Index Plugin
+# https://github.com/shigeya/jekyll-category-archive-plugin
+category_archive: category
 
 
 # Rake tasks settings
