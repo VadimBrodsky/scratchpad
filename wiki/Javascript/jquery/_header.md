@@ -1,1 +1,0 @@
-tags: [[jQuery|/pages/javascript/jquery/]], [[JavaScript|/pages/javascript/]]
