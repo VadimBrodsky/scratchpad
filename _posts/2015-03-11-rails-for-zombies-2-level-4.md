@@ -63,7 +63,104 @@ To create an HTML email, rename the extension from text to HTML
 
 <p>Your decomposition state is now <%= @zombie.decomp %> and your last tweet was : <%= @last_tweet.body %></p>
 
-<= link_to "View yourself", zombie_url(@zombie) %>
+<%= link_to "View yourself", zombie_url(@zombie) %>
 ```
 
 To create a multipart email with both HTML and text, just create two files and rails will join them together.
+
+The model is in charge of triggering the mail sending
+
+```ruby
+class Zombie <ActiveRecord::Base
+  after_save :decomp_change_notification, if: :decomp_changed?
+
+  private
+
+  def decomp_change_notification
+    ZombieMailer.decomp_change(self).deliver
+  end
+end
+```
+
+
+Mad Mini
+========
+
+Service for mass mailing and email marketing that integrates wit rails.
+
+Gemfile `gem 'madmimi'` then `bundle install`.
+
+```ruby
+mimi = MadMimi.new('<email>', '<api_key>')
+mimi.add_to_list('joe@example.com', 'newsletter')
+mimi.remove_from_list('joe@example.com', 'newsletter')
+mimi.memberships('joe@example.com')
+```
+
+
+Asset Pipeline
+==============
+
+Starting with rails 3.1 asset pipeline was added to manage stylesheets, images and javascripts.
+
+These folders can have assets:
+
+- `/app/assets/` stylesheets, javascripts, images -- app specific code
+- `/lib/assets/` stylesheets, javascripts, images -- my shared code
+- `/vendor/assets/` stylesheets, javascripts, images -- 3rd party code
+
+Rails will look in all three places when using `/assets/custom.png`
+
+
+Asset Tag Helpers
+=================
+
+Special tags that will set correct paths and set fingerprints:
+
+```erb
+<%= javascript_include_tag "custom" %>
+<%= stylesheet_link_tag "style" %>
+<%= image_tag "rails.png" %>
+```
+
+To use fingerprint caching in CSS files add the Erb extension and use the `asset_path` helper method:
+
+```erb
+# app/assets/stylesheets/zombie.css
+form.new_zombie input.submit {
+  background-image: url(<%= asset_path('button.png') %>)
+}
+```
+
+
+Default Asset Generation
+========================
+
+To remove either sass or coffee script remove the gems from the Gemfile and re-run `bundle install`.
+
+The `application.js` includes all the js assets via sprockets. It uses a manifest.
+
+Sprockets for JS:
+
+```javascript
+// /app/assets/javascript/application.js
+//= require jquery      // jQuery framework
+//= require jquery_ujs  // Rails specific unobtrusive JS
+//= require shard       // From lib folder
+//= require friend      // From vendor folder
+//= require self        // This file to set proper source order
+//= require_tree .      // All files in this directory
+```
+
+Sprockets for CSS:
+
+```css
+/* /app/assets/stylesheets/application.css
+/*
+ *= require rest
+ *= require_self
+ *= require_tree .
+*/
+```
+
+To precompile all files into `/public/assets/` run `rake assets:precompile`. It will also minify all code.
