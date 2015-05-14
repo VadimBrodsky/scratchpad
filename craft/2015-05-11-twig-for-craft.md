@@ -12,7 +12,7 @@ date: 2015-05-11 14:22:31
 
 ## Comments
 
-```twig
+```
 {# Holy cow Twig is awesome! #}
 {# This would not render in HTML #}
 ```
@@ -25,14 +25,14 @@ date: 2015-05-11 14:22:31
 - templates that are loaded as a result of a matching route get pre-loaded with the variables defined by the route’s tokens.
 - Templates that are loaded as the result of a matching entry URL get an “entry” variable.
 
-```twig
+```
 {% set hour = now|date("G") %}
 {% set author = 'Ryan Ireland' %}
 ```
 
 Set can apply to a whole block of code
 
-```twig
+```
 {% set socailLinks %}
   <ul class="social">
     <li class="twitter"><a href="">Twitter</a></li>
@@ -44,13 +44,13 @@ Set can apply to a whole block of code
 
 Can set multiple variable on the same line
 
-```twig
+```
 {% set title, subtitle, description = 'Foo', 'Bar', 'Baz' %}
 ```
 
 ## Hashes
 
-```twig
+```
 {% set nav = {
   about:    {title: "Foo", desc: "Bar"},
   services: {title: "Foo", desc: "Bar"},
@@ -62,7 +62,7 @@ Can set multiple variable on the same line
 ## Filters
 - To manipulate variables and output with filters
 
-```twig
+```
 {{ siteName | upper }}
 {{ entry.title | upper }}
 {{ now|date("M d, Y") }}
@@ -75,7 +75,7 @@ Can set multiple variable on the same line
 
 ## Conditionals
 
-```twig
+```
 <p>Is it happy hour?</p>
 
 {% set hour = now|date("G") %}
@@ -86,7 +86,7 @@ Can set multiple variable on the same line
 {% endif %}
 ```
 
-```twig
+```
 {% if entries | length == 0 %}
   <p>No entries available</p>
 {% endif %}
@@ -94,7 +94,7 @@ Can set multiple variable on the same line
 
 Logical conditionals
 
-```twig
+```
 {% if bodyClass is not defined %}
   {% set bodyClass = entry is defined ? entry.section.handle : craft.request.firstSegmetn %}
 {% endif %}
@@ -102,7 +102,7 @@ Logical conditionals
 
 Check for the first iteration in a loop
 
-```twig
+```
 {% if loop.first %}
   ...
 {% endif %}
@@ -121,20 +121,20 @@ Additional loop methods
 
 ## Loops
 
-```twig
+```
 {% for employee in department %}
   {{ employee.name }}
 {% endfor %}
 ```
 
-```twig
+```
 {% for artist in craft.entries.find({section: 'Artists', limit: '4', offset: '4'}) %}
   ...
 {% endfor %}
 ```
 
 
-```twig
+```
 {% for entry in craft.entries.section('news') %}
   {{ entry.title }}
 {% endfor %}
@@ -142,7 +142,7 @@ Additional loop methods
 
 Twig supports ranges
 
-```twig
+```
 <select name="age" id="">
   {% for age in 1..100 %}
     <option name="age-{{ age }}">{{ age }}</option>
@@ -152,7 +152,7 @@ Twig supports ranges
 
 This also works
 
-```twig
+```
 {% for age in range(1, 100) %}
 ```
 
@@ -164,14 +164,14 @@ This also works
 - Takes a parameter identifying the template you want to extend.
 - The parent template needs to define a block section to specify which part is being overridden.
 
-```twig
+```
 {# in the parent template #}
 {% block nameOfBlock %}
   ...
 {% endblock %}
 ```
 
-```twig
+```
 {# In the child template #}
 {% extend "_layouts/cp" %}
 {% block nameOfBlock %}
@@ -181,7 +181,7 @@ This also works
 
 To extend the parent's block instead of overriding it use the `parent()` function.
 
-```twig
+```
 {# In the child template #}
 {% extend "_layouts/cp" %}
 {% block nameOfBlock %}
@@ -197,7 +197,7 @@ To extend the parent's block instead of overriding it use the `parent()` functio
 - In pure Twig have to specify the `html` extension while in Craft the extension can be omitted
 - The included template can have access to any variables that were set
 
-```twig
+```
 {% include "twigSidenav.html" %}
 {% include "includes/_craftSidenav" %}
 ```
@@ -217,7 +217,7 @@ To extend the parent's block instead of overriding it use the `parent()` functio
 - Like an `extend` but allows to pass on variables
 
 
-```twig
+```
 {% embed 'social' %}
   {% block title %}
     ...
@@ -227,7 +227,7 @@ To extend the parent's block instead of overriding it use the `parent()` functio
 
 The template that is being embedded:
 
-```twig
+```
 <div class="module-social">
   <h4>{% block title %}We're Social{% endblock %}</h4>
   <ul>
@@ -242,7 +242,7 @@ The template that is being embedded:
 
 - Define where to yield data from child templates
 
-```twig
+```
 {% block content %}
   ...
 {% endblock %}
@@ -251,7 +251,7 @@ The template that is being embedded:
 
 ## Functions
 
-```twig
+```
 
 ```
 
@@ -266,7 +266,7 @@ The template that is being embedded:
 
 ## Image Transform URL
 
-```twig
+```
 <img src="{{ image.getUrl('artistThumbnail') }}">
 ```
 
@@ -283,7 +283,7 @@ template/404.html
 - Use a Twig macro to generate often used markup with slight variations
 - When used in the same file `{{ _self.socialList(networks, "three-networks") }}`
 
-```twig
+```
 {% macro macroName(param1, param2) %}
   ...
 {% endmacro %}
@@ -291,7 +291,7 @@ template/404.html
 
 Macro defined in a separate file
 
-```twig
+```
 {# _macros.html #}
 
 {% macro socialList(networks, className) %}
@@ -307,7 +307,7 @@ Macro defined in a separate file
 Then use it in a template
 
 
-```twig
+```
 {# template.html #}
 
 {% import '_macros' as siteMacros %}
@@ -339,7 +339,7 @@ Then use it in a template
 - Create hierarchical navigation for Structure sections or Category groups
 - The biggest benefit of the `nav` tag is the flexibility to add nested lists with `children` tag`
 
-```twig
+```
 {% set entries = craft.entries.section('services') %}
 <ul>
   {% nav entry in entries %}
@@ -360,7 +360,7 @@ Then use it in a template
 - Allows to create next and previous links
 - Uses the `{% paginate %}` and `{% endpaginate %}` tags
 
-```twig
+```
 {% paginate craft.entries.section('news').limit('4') as newsEntries %}
 
   {% for newsEntry in newsEntries %}
