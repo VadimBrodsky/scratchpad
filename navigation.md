@@ -3,7 +3,7 @@
 [Ruby](index-ruby.md)
 [Rails]()
 
-  * [Rails](rails.md)
+  * [Rails](index-rails.md)
   - - - -
   * [TDD](subitem1.md)
   * [DB](subitem2.md)
